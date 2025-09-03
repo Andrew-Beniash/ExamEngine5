@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+  <!-- Core palette -->
+  <Color x:Key="Color.Primary">#1976D2</Color>
+  <Color x:Key="Color.Accent">#F57C00</Color>
+  <Color x:Key="Color.Success">#43A047</Color>
+  <Color x:Key="Color.Text">#111111</Color>
+  <Color x:Key="Color.Surface">#FFFFFF</Color>
+  <Color x:Key="Color.SurfaceDark">#121212</Color>
+</ResourceDictionary>
+

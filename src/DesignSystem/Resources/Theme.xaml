@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+  <!-- Spacing tokens -->
+  <x:Double x:Key="Space.XS">4</x:Double>
+  <x:Double x:Key="Space.S">8</x:Double>
+  <x:Double x:Key="Space.M">12</x:Double>
+  <x:Double x:Key="Space.L">16</x:Double>
+  <x:Double x:Key="Space.XL">24</x:Double>
+
+  <!-- Corner radii -->
+  <x:Double x:Key="Radius.S">8</x:Double>
+  <x:Double x:Key="Radius.M">12</x:Double>
+  <x:Double x:Key="Radius.L">16</x:Double>
+
+  <!-- Typography base styles -->
+  <Style x:Key="Text.Body" TargetType="Label">
+    <Setter Property="FontSize" Value="14" />
+    <Setter Property="TextColor" Value="{StaticResource Color.Text}" />
+  </Style>
+
+  <Style x:Key="Text.Title" TargetType="Label" BasedOn="{StaticResource Text.Body}">
+    <Setter Property="FontSize" Value="24" />
+  </Style>
+
+  <!-- Convenience styles -->
+  <Style TargetType="ContentPage">
+    <Setter Property="BackgroundColor" Value="{StaticResource Color.Surface}" />
+    <Setter Property="Padding" Value="{StaticResource Space.L}" />
+  </Style>
+  <Style TargetType="Label" BasedOn="{StaticResource Text.Body}" />
+</ResourceDictionary>
+

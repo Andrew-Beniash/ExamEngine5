@@ -5,6 +5,10 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                <!-- Design system tokens -->
+                <ResourceDictionary Source="DesignSystem/Resources/Colors.xaml" />
+                <ResourceDictionary Source="DesignSystem/Resources/Theme.xaml" />
+
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
