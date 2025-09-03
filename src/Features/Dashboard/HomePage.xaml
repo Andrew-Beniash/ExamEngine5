@@ -11,7 +11,7 @@
       <!-- Recent Attempt Card -->
       <ds:Card Grid.Row="0" CardPadding="{StaticResource Space.L}" Elevation="8">
         <VerticalStackLayout Spacing="8">
-          <Label Style="{StaticResource Text.Title}" Text="Recent Attempt" />
+          <Label Style="{StaticResource Text.Title}" Text="{Binding Greeting}" />
           <Label Text="No attempts yet. Start practicing!" />
         </VerticalStackLayout>
       </ds:Card>
@@ -31,4 +31,3 @@
     </Grid>
   </ScrollView>
 </ContentPage>
-

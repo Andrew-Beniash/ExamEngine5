@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamEngine.Features.Practice.Adaptive.AdaptivePage"
+             Title="Adaptive">
+  <VerticalStackLayout Spacing="12" Padding="24">
+    <Label Style="{StaticResource Text.Title}" Text="Adaptive Placeholder" />
+    <Label Text="This is where Adaptive setup/content will go." />
+  </VerticalStackLayout>
+</ContentPage>
+

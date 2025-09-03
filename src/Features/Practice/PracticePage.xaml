@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ds="clr-namespace:ExamEngine.DesignSystem.Controls"
              x:Class="ExamEngine.Features.Practice.PracticePage"
              Title="Practice">
-  <VerticalStackLayout Spacing="12" Padding="24">
-    <Label Text="Practice" FontSize="24" HorizontalOptions="Center" />
-    <Label Text="Practice placeholder" HorizontalOptions="Center" />
-  </VerticalStackLayout>
-</ContentPage>
+  <ScrollView>
+    <VerticalStackLayout Spacing="12">
+      <!-- Adaptive Learning -->
+      <ds:Card CardPadding="{StaticResource Space.L}" Elevation="8">
+        <VerticalStackLayout Spacing="8">
+          <Label Style="{StaticResource Text.Title}" Text="Adaptive Learning" />
+          <Label Text="Smartly selects questions to maximize learning." />
+          <ds:PrimaryButton Text="Start Adaptive" Command="{Binding StartAdaptiveCommand}" />
+        </VerticalStackLayout>
+      </ds:Card>
 
+      <!-- Quick Practice -->
+      <ds:Card CardPadding="{StaticResource Space.L}" Elevation="8">
+        <VerticalStackLayout Spacing="8">
+          <Label Style="{StaticResource Text.Title}" Text="Quick Practice" />
+          <Label Text="Pick topics and a count to warm up." />
+          <ds:PrimaryButton Text="Start Quick"
+                            Command="{Binding StartQuickCommand}"
+                            CommandParameter="{Binding QuickConfig}" />
+        </VerticalStackLayout>
+      </ds:Card>
+
+      <!-- Full Exam Simulation -->
+      <ds:Card CardPadding="{StaticResource Space.L}" Elevation="8">
+        <VerticalStackLayout Spacing="8">
+          <Label Style="{StaticResource Text.Title}" Text="Full Exam" />
+          <Label Text="Timed simulation with review and scoring." />
+          <ds:PrimaryButton Text="Start Full Exam" Command="{Binding StartFullCommand}" />
+        </VerticalStackLayout>
+      </ds:Card>
+    </VerticalStackLayout>
+  </ScrollView>
+</ContentPage>
