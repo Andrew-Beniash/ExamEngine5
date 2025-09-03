@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamEngine.Features.Home.HomePage"
+             Title="Home">
+  <VerticalStackLayout Spacing="12" Padding="24">
+    <Label Text="Home" FontSize="24" HorizontalOptions="Center" />
+    <Label Text="Welcome to ExamEngine" HorizontalOptions="Center" />
+  </VerticalStackLayout>
+</ContentPage>
+
