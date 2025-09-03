@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Button xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="ExamEngine.DesignSystem.Controls.PrimaryButton"
+        BackgroundColor="{StaticResource Color.Primary}"
+        TextColor="White"
+        Padding="14,12"
+        FontAttributes="Bold"
+        CornerRadius="12">
+  <VisualStateManager.VisualStateGroups>
+    <VisualStateGroup x:Name="CommonStates">
+      <VisualState x:Name="Normal">
+        <VisualState.Setters>
+          <Setter Property="BackgroundColor" Value="{StaticResource Color.Primary}" />
+          <Setter Property="TextColor" Value="White" />
+          <Setter Property="Opacity" Value="1" />
+          <Setter Property="TranslationY" Value="0" />
+          <Setter Property="Scale" Value="1" />
+        </VisualState.Setters>
+      </VisualState>
+      <VisualState x:Name="Pressed">
+        <VisualState.Setters>
+          <!-- Slightly darker primary for pressed state -->
+          <Setter Property="BackgroundColor" Value="#1565C0" />
+          <Setter Property="TranslationY" Value="1" />
+          <Setter Property="Scale" Value="0.99" />
+        </VisualState.Setters>
+      </VisualState>
+      <VisualState x:Name="Disabled">
+        <VisualState.Setters>
+          <Setter Property="BackgroundColor" Value="#BDBDBD" />
+          <Setter Property="TextColor" Value="#EEEEEE" />
+          <Setter Property="Opacity" Value="0.7" />
+        </VisualState.Setters>
+      </VisualState>
+    </VisualStateGroup>
+  </VisualStateManager.VisualStateGroups>
+</Button>
+
